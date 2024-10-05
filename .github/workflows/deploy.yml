@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 触发部署的分支
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出项目代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 设置 Node.js 版本，并缓存 npm/pnpm 依赖
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # 指定 Node.js 版本
+          cache: 'pnpm'
+
+      # 安装 pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # 安装依赖
+      - name: Install dependencies
+        run: pnpm install
+
+      # 构建项目
+      - name: Build project
+        run: pnpm build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # 生成静态文件的目录
+
+      # 清除缓存（可选）
+      - name: Clean cache
+        run: pnpm store prune
