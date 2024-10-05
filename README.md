@@ -1,9 +1,8 @@
 # DappLink Developer Documents 📝💨
 
-| DappLink Layer3                                      | DappLink one-click deployment wallet, l2, l3, da and dapps solutions | X                             |
-|------------------------------------------------------|----------------------------------------------------------------------|-------------------------------|
-| [DappLink Layer3](https://github.com/eniac-x-labs)   | [DappLink Labs](https://github.com/dapplink-labs)                    | [X](https://x.com/0xdapplink) |
-
+| Layer3                                      | Tech Solutions                                                                                                   | X                             |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------|-------------------------------|
+| [DappLink Layer3](https://github.com/eniac-x-labs)  | [DappLink one-click deployment wallet, l2, l3, da and dapps solutions](https://github.com/dapplink-labs)         | [X](https://x.com/0xdapplink) |
 
 Building Web3 Middleware to Empower the Future of Blockchain, DappLink is web3 middleware tech solutions provider.
 
