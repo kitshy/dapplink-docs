@@ -1,2 +1,0 @@
-# DappLink Wallet {#dapplink-wallet}
-

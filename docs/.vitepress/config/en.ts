@@ -13,7 +13,7 @@ export const en = defineConfig({
 
     sidebar: {
       '/dapplink/': { base: '/dapplink/', items: sidebarDappLink() },
-      '/wallet/': { base: '/wallet/', items: sidebarwallet() }
+      '/wallet/': { base: '/wallet/', items: sidebarWallet() }
     },
 
     editLink: {
@@ -32,7 +32,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: 'DappLink',
-      link: '/dapplink/what-is-dapplink-docs',
+      link: '/dapplink/what-is-dapplink',
       activeMatch: '/dapplink/'
     },
     {
@@ -42,18 +42,18 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: 'DA',
-      link: '/dapplink/site-config',
-      activeMatch: '/wallet/'
+      link: '/da/overview',
+      activeMatch: '/da/'
     },
     {
       text: 'L2 & L3',
-      link: '/dapplink/site-config',
-      activeMatch: '/wallet/'
+      link: '/chain/overview',
+      activeMatch: '/chain/'
     },
     {
       text: 'Dapps',
-      link: '/dapplink/site-config',
-      activeMatch: '/wallet/'
+      link: '/dapps/overview',
+      activeMatch: '/dapps/'
     },
     {
       text: pkg.version,
@@ -77,32 +77,71 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       text: 'Introduction',
       collapsed: false,
       items: [
-        { text: 'What is DappLink?', link: 'what-is-dapplink-docs' },
-        { text: 'DappLink Layer3', link: 'dapplink-layer3' },
+        { text: 'What is DappLink ？', link: 'what-is-dapplink' },
+        { text: 'DappLink Core Business', link: 'core-business' },
       ]
     },
     {
-      text: 'xxxxx',
+      text: 'DappLink Layer3',
       collapsed: false,
       items: [
-        { text: 'xxxx', link: 'xxxx' },
+        { text: 'What is DappLink Layer3 ？', link: 'what-is-dapplink-layer3' },
+      ]
+    },
+    {
+      text: 'One-Click Wallet Deployment',
+      collapsed: false,
+      items: [
+        { text: 'What is One-Click Wallet Deployment ？', link: 'what-is-dapplink-wallet' },
+      ]
+    },
+    {
+      text: 'One-Click Chain Deployment',
+      collapsed: false,
+      items: [
+        { text: 'What is One-Click L2&L3 Deployment ？', link: 'what-is-dapplink-chain' },
+      ]
+    },
+    {
+      text: 'One-Click DA Deployment',
+      collapsed: false,
+      items: [
+        { text: 'What is One-Click DA Deployment ？', link: 'what-is-dapplink-da' },
+      ]
+    },
+    {
+      text: 'One-Click Deployment of Decentralized Composite Applications',
+      collapsed: false,
+      items: [
+        { text: 'What are Decentralized Composite Applications ？', link: 'what-is-dapplink-dapps' },
       ]
     }
   ]
 }
 
-function sidebarwallet(): DefaultTheme.SidebarItem[] {
+function sidebarWallet(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'wallet',
+      text: 'One-Click Wallet Deployment',
       items: [
-        { text: 'Overview', link: 'overview' },
-        { text: 'DappLink Wallet', link: 'dapplink-wallet' },
+        { text: 'System Architecture', link: 'overview' },
+        { text: 'Core Function', link: 'dapplink-wallet' },
         {
-          text: 'Projects',
-          base: '/dapplink/default-theme-',
+          text: 'Project Components',
+          base: '/wallet/',
           items: [
-            { text: 'wallet-chain-node', link: 'config' }
+            { text: 'Unified Browser API Code Library', link: 'chain-explorer-api' },
+            { text: 'Unified RPC Interface Service', link: 'wallet-chain-node' },
+            { text: 'Key Management Tool', link: 'key-locker' },
+            { text: 'Underlying Library for Threshold Secret Sharing Algorithms', link: 'dapplink-secret' },
+            { text: 'Market Aggregator', link: 'skyeye' },
+            { text: 'Trade System', link: 'trade' },
+            { text: 'Offline Sign SDK', link: 'wallet-sdk' },
+            { text: 'MPC Network', link: 'tss' },
+            { text: 'Cross-Chain Staking Project', link: 'linklayer' },
+            { text: 'HD Wallet Backend Service', link: 'hailstone' },
+            { text: 'Unified Wallet Services for Deposit, Withdrawal, Aggregation, Cold Transfer, and Risk Control', link: 'wallet-scanner' },
+            { text: 'Centralized Wallet Business Components', link: 'centralized-wallet-servicer' }
           ]
         }
       ]

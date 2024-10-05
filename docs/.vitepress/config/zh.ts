@@ -13,7 +13,7 @@ export const zh = defineConfig({
 
     sidebar: {
       '/zh/dapplink/': { base: '/zh/dapplink/', items: sidebarDappLink() },
-      '/zh/wallet/': { base: '/zh/wallet/', items: sidebarwallet() }
+      '/zh/wallet/': { base: '/zh/wallet/', items: sidebarWallet() }
     },
 
     editLink: {
@@ -56,7 +56,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: 'DappLink',
-      link: '/zh/dapplink/what-is-dapplink-docs',
+      link: '/zh/dapplink/what-is-dapplink',
       activeMatch: '/zh/dapplink/'
     },
     {
@@ -66,18 +66,18 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       text: '公链',
-      link: '/zh/dapplink/site-config',
-      activeMatch: '/zh/wallet/'
+      link: '/zh/chain/overview',
+      activeMatch: '/zh/chain/'
     },
     {
       text: 'DA',
-      link: '/zh/dapplink/site-config',
-      activeMatch: '/zh/wallet/'
+      link: '/zh/da/overview',
+      activeMatch: '/zh/da/'
     },
     {
       text: '去中心化应用',
-      link: '/zh/dapplink/site-config',
-      activeMatch: '/zh/wallet/'
+      link: '/zh/dapps/overview',
+      activeMatch: '/zh/dapps/'
     },
     {
       text: pkg.version,
@@ -101,61 +101,71 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       text: '简介',
       collapsed: false,
       items: [
-        { text: '什么是 DappLink ？', link: 'what-is-dapplink-docs' },
-        { text: 'DappLink Layer3', link: 'dapplink-layer3' },
-      ]
-    },
-    {
-      text: '一键发钱包',
-      collapsed: false,
-      items: [
-        { text: '什么是一键发钱包', link: 'what-is-dapplink-docs' },
+        { text: '什么是 DappLink ？', link: 'what-is-dapplink' },
+        { text: 'DappLink 核心业务', link: 'core-business' },
       ]
     },
     {
       text: 'DappLink Layer3',
       collapsed: false,
       items: [
-        { text: '什么是 DappLink Layer3', link: 'what-is-dapplink-docs' },
+        { text: '什么是 DappLink Layer3 ？', link: 'what-is-dapplink-layer3' },
+      ]
+    },
+    {
+      text: '一键发钱包',
+      collapsed: false,
+      items: [
+        { text: '什么是一键发钱包 ？', link: 'what-is-dapplink-wallet' },
       ]
     },
     {
       text: '一键发公链',
       collapsed: false,
       items: [
-        { text: '什么是一键发链', link: 'what-is-dapplink-docs' },
+        { text: '什么是一键发链 ？', link: 'what-is-dapplink-chain' },
       ]
     },
     {
       text: '一键发 DA',
       collapsed: false,
       items: [
-        { text: '什么是一键发 DA', link: 'what-is-dapplink-docs' },
+        { text: '什么是一键发 DA ？', link: 'what-is-dapplink-da' },
       ]
     },
     {
-      text: '一键发组合去中心化应用',
+      text: '一键发去中心化组合应用',
       collapsed: false,
       items: [
-        { text: '什么是组合去中心化应用', link: 'what-is-dapplink-docs' },
+        { text: '什么是去中心化组合应用 ？', link: 'what-is-dapplink-dapps' },
       ]
     }
   ]
 }
 
-function sidebarwallet(): DefaultTheme.SidebarItem[] {
+function sidebarWallet(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: '一键发钱包',
       items: [
-        { text: '钱包架构', link: 'overview' },
-        { text: '钱包功能模块', link: 'dapplink-wallet' },
+        { text: '系统架构', link: 'overview' },
+        { text: '核心功能模块', link: 'dapplink-wallet' },
         {
-          text: '项目组成',
-          base: '/zh/dapplink/default-theme-',
+          text: '项目组件',
+          base: '/zh/wallet/',
           items: [
-            { text: 'wallet-chain-node', link: 'config' },
-            { text: 'sky-eye', link: 'nav' },
+            { text: '统一浏览器代码库', link: 'chain-explorer-api' },
+            { text: '统一 RPC 接口服务', link: 'wallet-chain-node' },
+            { text: '密钥托管工具', link: 'key-locker' },
+            { text: '门限共享秘密算法的底层库', link: 'dapplink-secret' },
+            { text: '行情聚合器物', link: 'skyeye' },
+            { text: '交易系统', link: 'trade' },
+            { text: '离线签名 SDK', link: 'wallet-sdk' },
+            { text: 'MPC 网络', link: 'tss' },
+            { text: '跨链质押项目', link: 'linklayer' },
+            { text: 'HD 钱包后端服务服务', link: 'hailstone' },
+            { text: '统一充值，提现，归集，转冷，风控的钱包服务', link: 'wallet-scanner' },
+            { text: '中心化钱包业务组件', link: 'centralized-wallet-servicer' }
           ]
         }
       ]
