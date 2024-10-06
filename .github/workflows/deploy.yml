@@ -1,44 +1,53 @@
-name: Deploy to GitHub Pages
-
+name: App Image Build And Deploy
 on:
-  push:
-    branches:
-      - main  # 触发部署的分支
-
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: environment to choice
+        options:
+          - testnet
+          - mainnet
+env:
+  AWS_REGION: "ap-southeast-1"
+  app: dapplink-docs
+permissions:
+  id-token: write
+  contents: read
+run-name: Build Image For Repo
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: self-hosted
+    outputs:
+      commit_sha: ${{ steps.get-commit-sha.outputs.commit_sha }}
+      ecr_registry: ${{ steps.login-ecr.outputs.registry }}
     steps:
-      # 检出项目代码
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
-
-      # 设置 Node.js 版本，并缓存 npm/pnpm 依赖
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # 指定 Node.js 版本
-
-      # 安装 pnpm
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      # 安装依赖
-      - name: Install dependencies
-        run: pnpm install
-
-      # 构建项目
-      - name: Build project
-        run: pnpm build
-
-      # 部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # 生成静态文件的目录
-
-      # 清除缓存（可选）
-      - name: Clean cache
-        run: pnpm store prune
+          node-version: '18'
+      - name: Get Commit Sha
+        id: get-commit-sha
+        run: |
+          echo "::set-output name=commit_sha::$(git rev-parse --short=7 HEAD)"
+      - name: deploy app
+        run: |
+          registry="hkccr.ccs.tencentyun.com"
+          namespace="dapplink"
+          appname="dapplink-docs"
+          tag_name="${registry}/${namespace}/${appname}"
+          docker login --username=100003588471 -p dapplink@go hkccr.ccs.tencentyun.com
+          docker build --pull  -t ${tag_name}:v3 .
+          docker push ${tag_name}:v3
+          
+          HELM_OPTS="${HELM_OPTS} --set image.repository=${tag_name}"
+          HELM_OPTS="${HELM_OPTS} --set image.tag=v3"
+          if [ ${{github.event.inputs.environment }} == "testnet" ]; then
+            helm template ${{ env.app }} -f values.yaml charts ${HELM_OPTS}
+            helm upgrade --install ${{ env.app }} -f values.yaml charts ${HELM_OPTS}
+          else
+            helm template ${{ env.app }} -f values.yaml charts ${HELM_OPTS}
+            helm upgrade --install ${{ env.app }} -f values.yaml charts ${HELM_OPTS}
+          fi
