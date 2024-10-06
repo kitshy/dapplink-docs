@@ -89,13 +89,5 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-livenessProbe:
-    tcpSocket:
-        port: 5000
-    initialDelaySeconds: 30
-    periodSeconds: 10
-readinessProbe:
-    tcpSocket:
-        port: 5000
-    initialDelaySeconds: 30
-    periodSeconds: 10
+livenessProbe: {}
+readinessProbe: {}
