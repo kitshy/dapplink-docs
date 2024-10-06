@@ -2,7 +2,7 @@ import { defineConfig } from 'dapplink-docs'
 import { search as zhSearch } from './zh'
 
 export const shared = defineConfig({
-  title: 'TECH DOCS',
+  title: '🔥🔥🔥',
 
   rewrites: {
     'en/:rest*': ':rest*'
