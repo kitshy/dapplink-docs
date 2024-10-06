@@ -11,7 +11,7 @@ image:
     tag: ""
 
 imagePullSecrets:
-    - name: dapplink-secret
+    - name: theweb3-secret
 nameOverride: ""
 
 serviceAccount:
