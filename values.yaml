@@ -44,7 +44,7 @@ service:
 ports:
     - protocol: TCP
       port: 80
-      targetPort: 3000
+      targetPort: 5173
       nodePort: 30008
 
 ingress:
