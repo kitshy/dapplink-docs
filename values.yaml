@@ -45,7 +45,7 @@ ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-      nodePort: 30006
+      nodePort: 30008
 
 ingress:
     enabled: false
