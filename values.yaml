@@ -11,7 +11,7 @@ image:
     tag: ""
 
 imagePullSecrets:
-    - name: theweb3-secret
+    - name: dapplink-sercret
 nameOverride: ""
 
 serviceAccount:
@@ -43,9 +43,9 @@ service:
 
 ports:
     - protocol: TCP
-      port: 9011
+      port: 9014
       targetPort: 5173
-      nodePort: 30008
+      nodePort: 30010
 
 ingress:
     enabled: false
