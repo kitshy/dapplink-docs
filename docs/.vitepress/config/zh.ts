@@ -101,45 +101,38 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       text: '简介',
       collapsed: false,
       items: [
-        { text: '什么是 DappLink ？', link: 'what-is-dapplink' },
+        { text: 'DappLink 是什么', link: 'what-is-dapplink' },
         { text: 'DappLink 核心业务', link: 'core-business' },
-      ]
-    },
-    {
-      text: 'DappLink Layer3',
-      collapsed: false,
-      items: [
-        { text: '什么是 DappLink Layer3 ？', link: 'what-is-dapplink-layer3' },
       ]
     },
     {
       text: '一键发钱包',
       collapsed: false,
       items: [
-        { text: '什么是一键发钱包 ？', link: 'what-is-dapplink-wallet' },
+        { text: '什么是一键发钱包', link: 'what-is-dapplink-wallet' },
       ]
     },
     {
       text: '一键发公链',
       collapsed: false,
       items: [
-        { text: '什么是一键发链 ？', link: 'what-is-dapplink-chain' },
-      ]
-    },
-    {
-      text: '一键发 DA',
-      collapsed: false,
-      items: [
-        { text: '什么是一键发 DA ？', link: 'what-is-dapplink-da' },
+        { text: '一键发链是什么', link: 'what-is-dapplink-chain' },
       ]
     },
     {
       text: '一键发去中心化组合应用',
       collapsed: false,
       items: [
-        { text: '什么是去中心化组合应用 ？', link: 'what-is-dapplink-dapps' },
+        { text: '去中心化组合应用是什么', link: 'what-is-dapplink-dapps' },
       ]
-    }
+    },
+    {
+      text: 'DappLink Layer3',
+      collapsed: false,
+      items: [
+        { text: 'DappLink Layer3 是什么', link: 'what-is-dapplink-layer3' },
+      ]
+    },
   ]
 }
 

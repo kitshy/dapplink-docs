@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 什么是 DappLink?
-      link: /zh/dapplink/what-is-dapplink-docs
+      link: /zh/dapplink/what-is-dapplink
     - theme: alt
       text: 官方网站
       link: https://www.dapplink.xyz/

@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: What is DappLink?
-      link: /dapplink/what-is-dapplink-docs
+      link: /dapplink/what-is-dapplink
     - theme: alt
       text: Official Website
       link: https://www.dapplink.xyz/

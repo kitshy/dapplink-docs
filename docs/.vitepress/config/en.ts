@@ -42,7 +42,7 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/wallet/'
     },
     {
-      text: 'Chain abstract',
+      text: 'Chain Abstract',
       link: '/chain/overview',
       activeMatch: '/chain/'
     },
@@ -83,13 +83,6 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: 'DappLink Layer3',
-      collapsed: false,
-      items: [
-        { text: 'What is DappLink Layer3 ？', link: 'what-is-dapplink-layer3' }
-      ]
-    },
-    {
       text: 'One-Click Wallet Deployment',
       collapsed: false,
       items: [
@@ -110,16 +103,6 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       ]
     },
     {
-      text: 'One-Click DA Deployment',
-      collapsed: false,
-      items: [
-        {
-          text: 'What is One-Click DA Deployment ？',
-          link: 'what-is-dapplink-da'
-        }
-      ]
-    },
-    {
       text: 'One-Click Deployment of Decentralized Composite Applications',
       collapsed: false,
       items: [
@@ -128,7 +111,14 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
           link: 'what-is-dapplink-dapps'
         }
       ]
-    }
+    },
+    {
+      text: 'DappLink Layer3',
+      collapsed: false,
+      items: [
+        { text: 'What is DappLink Layer3 ？', link: 'what-is-dapplink-layer3' }
+      ]
+    },
   ]
 }
 
