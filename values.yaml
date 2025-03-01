@@ -45,7 +45,7 @@ ports:
     - protocol: TCP
       port: 9014
       targetPort: 5173
-      nodePort: 30010
+      nodePort: 30011
 
 ingress:
     enabled: false
