@@ -65,19 +65,19 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/zh/wallet/'
     },
     {
-      text: '公链',
+      text: '链抽象',
       link: '/zh/chain/overview',
       activeMatch: '/zh/chain/'
-    },
-    {
-      text: 'DA',
-      link: '/zh/da/overview',
-      activeMatch: '/zh/da/'
     },
     {
       text: '去中心化应用',
       link: '/zh/dapps/overview',
       activeMatch: '/zh/dapps/'
+    },
+    {
+      text: 'Layer3',
+      link: '/zh/layer3/overview',
+      activeMatch: '/zh/layer3/'
     },
     {
       text: pkg.version,

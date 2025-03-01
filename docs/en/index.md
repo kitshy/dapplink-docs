@@ -13,8 +13,8 @@ hero:
       text: What is DappLink?
       link: /dapplink/what-is-dapplink-docs
     - theme: alt
-      text: Quickstart
-      link: /dapplink/getting-started
+      text: Official Website
+      link: https://www.dapplink.xyz/
     - theme: alt
       text: GitHub
       link: https://github.com/dapplink-labs/dapplink-docs
@@ -25,16 +25,17 @@ hero:
 features:
   - icon: 💰
     title: One-Click Wallet Deployment
-    details: Support One-Click Deployment of Decentralized, Centralized, AA, and MPC Wallets.
+    details: Supports one-click deployment of decentralized, centralized, multi-sign, and MPC wallets.
   - icon: 🔗
-    title: One-Click Deployment of L2 and L3 Application Chains
-    details: L2 and L3 Application Chains Tailored for Specific Use Cases, Supporting Bitcoin, Ethereum, and Solana Ecosystems.
-  - icon: ⚡️
-    title: One-Click Deployment of High-Performance DA
-    details: A Specialized Data Availability Layer for High-Performance Applications in Gaming and Social Networking.
+    title: One-Click Application Chain Deployment
+    details: Business-abstracted application chains tailored for specific use cases, supporting ecosystems like Bitcoin, Ethereum, Solana, and Cosmos.
   - icon: 🚀
-    title: One-Click Deployment of Composite DApps
-    details: Build Your Decentralized Applications Like Playing with Lego.
+    title: One-Click Composable Dapps Deployment
+    details: Build your decentralized applications like playing with Lego blocks.
+  - icon: ⚡️
+    title: Modular and Composable Layer3
+    details: The first modular and composable Layer3 solution that derives Layer3 application chains based on upper-layer business logic.
+ 
 ---
 
 <style>

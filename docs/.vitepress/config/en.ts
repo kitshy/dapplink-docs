@@ -42,12 +42,7 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/wallet/'
     },
     {
-      text: 'DA',
-      link: '/da/overview',
-      activeMatch: '/da/'
-    },
-    {
-      text: 'L2 & L3',
+      text: 'Chain abstract',
       link: '/chain/overview',
       activeMatch: '/chain/'
     },
@@ -55,6 +50,11 @@ function nav(): DefaultTheme.NavItem[] {
       text: 'Dapps',
       link: '/dapps/overview',
       activeMatch: '/dapps/'
+    },
+    {
+      text: 'layer3',
+      link: '/layer3/overview',
+      activeMatch: '/layer3/'
     },
     {
       text: pkg.version,
