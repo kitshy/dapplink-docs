@@ -52,11 +52,6 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/dapps/'
     },
     {
-      text: 'layer3',
-      link: '/layer3/overview',
-      activeMatch: '/layer3/'
-    },
-    {
       text: pkg.version,
       items: [
         {
@@ -79,7 +74,8 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'What is DappLink ？', link: 'what-is-dapplink' },
-        { text: 'DappLink Core Business', link: 'core-business' }
+        { text: 'DappLink Core Business', link: 'core-business' },
+        { text: 'Why Choose DappLink', link: 'why-is-dapplink' }
       ]
     },
     {

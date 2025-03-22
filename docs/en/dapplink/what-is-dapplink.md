@@ -1,5 +1,5 @@
 # What is DappLink?
 
-DappLink specializes in building Web3 middleware infrastructure, aiming to bridge the gap between underlying blockchains and upper-layer applications by providing efficient, secure, and scalable one-click Web3 solutions.
+DappLink focuses on building Web3 middleware infrastructure, aiming to bridge the gap between underlying blockchain technologies and upper-layer applications. It offers efficient, secure, and scalable one-click Web3 solutions to help developers build and manage Web3 applications more easily, thereby enhancing the interoperability and user experience of the entire blockchain ecosystem.
 
-DappLink’s mission is to empower developers with the tools they need to easily build and manage Web3 applications, enhancing interoperability and user experience across the blockchain ecosystem. 
+DappLink can be likened to an advanced construction toolbox, equipped with a variety of pre-designed components. Just as architects can use ready-made modules to quickly construct efficient and robust buildings, developers can leverage DappLink’s standardized modules and interfaces to rapidly build decentralized applications tailored to specific needs—without having to develop complex underlying features from scratch.

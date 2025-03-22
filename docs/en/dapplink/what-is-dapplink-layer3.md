@@ -1,47 +1,37 @@
 # DappLink Layer3
 
-Modular and composable design tailored for large-scale decentralized application scenarios
+## 1. What is Layer3?
+
+Layer3 is a decentralized application protocol chain (AppChain) built on top of Layer2. Its security is jointly ensured by the underlying Layer1 networks (such as Ethereum, Bitcoin) and Layer2 networks (like Arbitrum, OP, zkSync, etc.).
+
+To maintain high availability, low complexity, and the “small yet powerful” design principle, Layer3 chains are typically optimized for a single application scenario, such as:
+
+- Decentralized social and gaming (focus on data interaction and high-frequency operations)
+- Decentralized custody systems (focus on security and private key management)
+- Decentralized trading protocols (focus on high throughput and asset settlement)
+
+By isolating complex scenarios into dedicated Layer3 chains, developers can simplify system architecture, while also improving performance and security.
 
 
-## Overview
+## 2. Why Choose DappLink’s General-Purpose Layer3?
 
-DappLink Network is a technology stack for large-scale decentralized application scenarios, and we are the first modular and composable Layer3 app chain solutions. For Layer3, modular is different from Layer2, the modularization of Layer3 is based on upper-Layer applications, and modules can be combined to serve upper-layer applications.
-Our protocol design philosophy aims to Interconnect everything with Layer3 on blockchain, greatly reduces costs, improves security, and is designed from the perspective of users, developers, and benefiting mankind.
+With the growth of the Web3 ecosystem, sectors such as social, gaming, custody, and trading are becoming large-scale and application-specific. As a result, Layer3 AppChains are emerging as a key infrastructure for the next generation of Web3.
 
+Major Layer2 projects like Arbitrum, Optimism, and zkSync are already laying out Layer3 strategies.
 
-### Key Features of DappLink Network
+In response to this trend, DappLink has introduced specialized Layer3 protocols including:
 
+- Social + Gaming Layer3 AppChain
+- Custody-focused Layer3 AppChain
+- Trading-oriented Layer3 AppChain
 
-#### Support for large-scale decentralized application scenarios
-AppChain facilitates upper-layer business scenarios in a modular and composable manner. This modularity distinguishes itself from that of Layer 2. Layer 3’s modularity is specifically tailored to accommodate intricate upper-layer application scenarios. Diverse modules are employed to cater to various business scenarios, allowing for the flexible assembly of modules into upper-layer applications as required.
+###### DappLink also introduces a “General-Purpose Layer3 Infrastructure” concept:
 
-We acknowledge that different applications have diverse requirements for immediacy and security. For instance, real-time social networking and gaming prioritize immediate information interaction over stringent security needs. Conversely, asset custody prioritizes security as the top concern but may tolerate some delays. Utilizing the same data availability layer (DA) for all applications would inevitably result in unsatisfactory user experiences.
+This infrastructure can be deployed on any Layer2, enabling developers to rapidly build Layer3 AppChains tailored to specific verticals. This significantly improves compatibility, flexibility, and the success rate of Web3 projects.
 
-In the custody module, we have established a high-consensus network comprising multi-signature nodes. Fund transfers are only approved when the vote reaches a 2/3 majority, ensuring robust security measures. This setup, combined with the security provided by the staking protocol, offers dual-layer protection.
+In other words, whether you’re building on Arbitrum, OP, zkSync, or others — with DappLink’s Layer3 protocol, you can launch your own Layer3 AppChain with one click.
 
-Different modules are operated by various types of nodes, all of which contribute to a shared staking pool. For instance, if 10 stakers collectively stake 100 ETH with the operator, the operator can concurrently run AppChain nodes across different modules. This arrangement enables efficient resource allocation and maximizes the utilization of staked assets across the network.
+## 3. DappLink Layer3 Ecosystem Architecture Overview
+![dapplinklayer3.png](img/dapplinklayer3.png)
 
-#### True integration of blockchain and AI
-Layer3, which exists to carry large-scale applications, can not only process massive data, but also builds the cornerstone of large-scale applications on the future chain, covering all application scenarios such as social networking, games, custody and financial transactions. Its data availability layer module ensures the non-modification and credibility of data, providing a reliable training basis for AI. Dapplink's modular and composable Layer3 technology solutions will promote the in-depth integration between data and AI, making AI models trained based on massive data more intelligent, and pushing the combination of Web3 and AI into a new era.
-
-#### High Security
-Compared with applications deployed on Layer1 and Layer2, due to the limitations of the contract (the contract can be controlled by the project party), it is more decentralized and has higher security guarantees.
-
-#### Low costs
-Comparing Layer2 and Layer1 : Fees reduced by 7-90 times
-Comparing Layer3 and Layer2 : Fees could reduce another 1000 times or more
-
-## DappLink Network Components
-
-- Cross-Chain Interoperability Protocol  
-  - Compatible with Bitcoin, Ethereum, and other ecosystems. Empowering L3 with unparalleled cross-chain interoperability.
-
-- Layer3 multi-staking protocol
-  - As the bedrock for security of L3, staking mechanism shields against the attacks from malicious nodes, while reverse staking mechanism fortifies the security of staked funds.
-
-- Modular and Composable L3 AppChain
-  - AI, Privacy, social, gaming, custody, trading and other modules can be combined, activated for various complex application secenarios, supporting the vision of interconnect all chains, onboard every app onchain.
-
-
-
-
+With its one-stop Layer3 AppChain deployment solution, DappLink empowers developers to build high-performance, purpose-driven decentralized applications, accelerating the arrival of a truly usable Web3 era.

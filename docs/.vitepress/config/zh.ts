@@ -75,11 +75,6 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '/zh/dapps/'
     },
     {
-      text: 'Layer3',
-      link: '/zh/layer3/overview',
-      activeMatch: '/zh/layer3/'
-    },
-    {
       text: pkg.version,
       items: [
         {
@@ -103,6 +98,7 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'DappLink 是什么', link: 'what-is-dapplink' },
         { text: 'DappLink 核心业务', link: 'core-business' },
+        { text: '为什么选择 DappLink', link: 'why-is-dapplink' }
       ]
     },
     {
@@ -116,14 +112,14 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       text: '一键发公链',
       collapsed: false,
       items: [
-        { text: '一键发链是什么', link: 'what-is-dapplink-chain' },
+        { text: '什么是一键发链', link: 'what-is-dapplink-chain' },
       ]
     },
     {
       text: '一键发去中心化组合应用',
       collapsed: false,
       items: [
-        { text: '去中心化组合应用是什么', link: 'what-is-dapplink-dapps' },
+        { text: '什么是一键发去中心化组合应用', link: 'what-is-dapplink-dapps' },
       ]
     },
     {
