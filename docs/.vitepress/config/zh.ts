@@ -156,6 +156,18 @@ function sidebarWallet(): DefaultTheme.SidebarItem[] {
             { text: '统一充值，提现，归集，转冷，风控的钱包服务', link: 'wallet-scanner' },
             { text: '中心化钱包业务组件', link: 'centralized-wallet-servicer' }
           ]
+        }, {
+          text: '本地运行测试',
+          base: '/zh/wallet/setup',
+          items: [
+            { text: '统一浏览器代码库', link: 'chain-explorer-api' },
+          ]
+        }, {
+          text: '使用 DappLink 测试网络测试',
+          base: '/zh/wallet/setup',
+          items: [
+            { text: '统一浏览器代码库', link: 'chain-explorer-api' },
+          ]
         }
       ]
     }
