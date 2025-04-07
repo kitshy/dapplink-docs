@@ -13,7 +13,8 @@ export const zh = defineConfig({
 
     sidebar: {
       '/zh/dapplink/': { base: '/zh/dapplink/', items: sidebarDappLink() },
-      '/zh/wallet/': { base: '/zh/wallet/', items: sidebarWallet() }
+      '/zh/wallet/': { base: '/zh/wallet/', items: sidebarWallet() },
+      '/zh/chain/': { base: '/zh/chain/', items: sidebarChain() }
     },
 
     editLink: {
@@ -167,6 +168,50 @@ function sidebarWallet(): DefaultTheme.SidebarItem[] {
           base: '/zh/wallet/setup',
           items: [
             { text: '统一浏览器代码库', link: 'chain-explorer-api' },
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+function sidebarChain(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      items: [
+        {
+          text: '项目介绍',
+          base: '/zh/chain/',
+          items: [
+            { text: '概述', link: 'overview' },
+            { text: '功能模块', link: 'core-module' }
+          ]
+        },
+        {
+          text: '功能模块详细',
+          base: '/zh/chain/',
+          items: [
+            { text: 'RollUp 和证明系统抽象', link: 'rollup-and-proof-system-abstraction' },
+            { text: '跨链抽象', link: 'cross-chain-abstraction' },
+            { text: '多重质押协议', link: 'multi-staking-protocol' },
+            { text: '快速验证网络抽象', link: 'fast-finality' },
+            { text: '模块化可组合 Layer3', link: 'layer3-app-chain' },
+          ]
+        }, {
+          text: '本地运行测试',
+          base: '/zh/chain/',
+          items: [
+            { text: '本地启动网络', link: 'chain-setup' },
+            { text: '开始使用', link: 'start-test' },
+          ]
+        }, {
+          text: 'DappLink 测试网络测试',
+          base: '/zh/chain/',
+          items: [
+            { text: '测试网络介绍', link: 'dapplink-testnet' },
+            { text: 'RPC 链接', link: 'rpc-url' },
+            { text: '链接钱包', link: 'connect-wallet' },
+            { text: '部署项目', link: 'deploy-project' }
           ]
         }
       ]

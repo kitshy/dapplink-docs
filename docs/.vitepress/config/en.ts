@@ -13,7 +13,8 @@ export const en = defineConfig({
 
     sidebar: {
       '/dapplink/': { base: '/dapplink/', items: sidebarDappLink() },
-      '/wallet/': { base: '/wallet/', items: sidebarWallet() }
+      '/wallet/': { base: '/wallet/', items: sidebarWallet() },
+      '/chain/': { base: '/chain/', items: sidebarChain() }
     },
 
     editLink: {
@@ -156,6 +157,50 @@ function sidebarWallet(): DefaultTheme.SidebarItem[] {
               text: 'Centralized Wallet Business Components',
               link: 'centralized-wallet-servicer'
             }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+function sidebarChain(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      items: [
+        {
+          text: 'Project Introduction',
+          base: '/en/chain/',
+          items: [
+            { text: 'System Architecture', link: 'overview' },
+            { text: 'Functional Modules', link: 'core-module' }
+          ]
+        },
+        {
+          text: 'Detailed Description of Functional Modules',
+          base: '/en/chain/',
+          items: [
+            { text: 'RollUp and Proof System Layer', link: 'rollup-and-proof-system-abstraction' },
+            { text: 'Cross-Chain', link: 'cross-chain-abstraction' },
+            { text: 'Multi-Staking Protocol', link: 'multi-staking-protocol' },
+            { text: 'Fast Finality Network', link: 'fast-finality' },
+            { text: 'Modular and Composable Layer3', link: 'layer3-app-chain' },
+          ]
+        }, {
+          text: 'Local Test Run',
+          base: '/en/chain/',
+          items: [
+            { text: 'Local Startup Network', link: 'chain-setup' },
+            { text: 'Quick Start', link: 'start-test' },
+          ]
+        }, {
+          text: 'DappLink TestNet',
+          base: '/en/chain/',
+          items: [
+            { text: 'Introduction', link: 'dapplink-testnet' },
+            { text: 'RPC', link: 'rpc-url' },
+            { text: 'Connect Wallet', link: 'connect-wallet' },
+            { text: 'Deploy Project', link: 'deploy-project' }
           ]
         }
       ]
