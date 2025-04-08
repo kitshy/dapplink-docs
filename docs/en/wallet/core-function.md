@@ -1,4 +1,4 @@
-# DappLink Core Function
+# Functional Modules
 ##
 
 The DappLink one-click wallet deployment platform is composed of multiple core components to ensure security, scalability, and high performance

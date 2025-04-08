@@ -148,7 +148,7 @@ function sidebarWallet(): DefaultTheme.SidebarItem[] {
           ]
         },
         {
-          text: 'Detailed Overview of Exchange Wallet Business Flow',
+          text: 'Detailed of Exchange Wallet Business Flow',
           base: '/en/wallet/centralized/',
           collapsed: false,
           items: [
@@ -175,7 +175,7 @@ function sidebarWallet(): DefaultTheme.SidebarItem[] {
           ]
         },
         {
-          text: 'Detailed Overview of Decentralized Wallet Business Flow',
+          text: 'Detailed of Decentralized Wallet Business Flow',
           base: '/en/wallet/decentralized/',
           collapsed: false,
           items: [

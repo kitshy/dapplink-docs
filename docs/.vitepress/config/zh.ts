@@ -213,9 +213,9 @@ function sidebarWallet(): DefaultTheme.SidebarItem[] {
         },
         {
           text: '本地运行测试',
-          base: '/zh/wallet/',
+          base: '/zh/wallet/setup/',
           collapsed: false,
-          items: [{ text: '本地启动网络', link: 'start-test' }]
+          items: [{ text: '本地运行 DappLink 一键发钱包项目', link: 'start-local-test' }]
         },
         {
           text: '使用 DappLink 测试网络测试',
