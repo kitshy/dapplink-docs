@@ -14,7 +14,8 @@ export const zh = defineConfig({
     sidebar: {
       '/zh/dapplink/': { base: '/zh/dapplink/', items: sidebarDappLink() },
       '/zh/wallet/': { base: '/zh/wallet/', items: sidebarWallet() },
-      '/zh/chain/': { base: '/zh/chain/', items: sidebarChain() }
+      '/zh/chain/': { base: '/zh/chain/', items: sidebarChain() },
+      '/zh/dapps/': { base: '/zh/dapps/', items: sidebarDapp() }
     },
 
     editLink: {
@@ -253,6 +254,46 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
             { text: 'RPC 链接', link: 'rpc-url' },
             { text: '链接钱包', link: 'connect-wallet' },
             { text: '部署项目', link: 'deploy-project' }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+function sidebarDapp(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      items: [
+        {
+          text: '项目介绍',
+          base: '/zh/dapps/',
+          collapsed: false,
+          items: [
+            { text: '概述', link: 'overview' },
+            { text: '功能模块', link: 'core-module' }
+          ]
+        },
+        {
+          text: '功能模块详细',
+          base: '/zh/dapps/',
+          collapsed: false,
+          items: [
+            { text: '去中心化交易所', link: 'dex-spot' },
+            { text: '去中心化衍生品', link: 'dex-derivatives' },
+            { text: '质押借贷协议', link: 'staking-protocol' },
+            { text: 'LSP 和重新质押协议', link: 'lsp-restaking' },
+            { text: '链上保险', link: 'onchain-insurance' },
+            { text: 'PayFi 和 RWA', link: 'payfi-rwa' },
+          ]
+        },
+        {
+          text: 'EventFi 案例',
+          base: '/zh/dapps/case/',
+          collapsed: false,
+          items: [
+            { text: '本地启动网络', link: 'chain-setup' },
+            { text: '开始使用', link: 'start-test' },
           ]
         }
       ]

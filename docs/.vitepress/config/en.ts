@@ -14,7 +14,8 @@ export const en = defineConfig({
     sidebar: {
       '/dapplink/': { base: '/dapplink/', items: sidebarDappLink() },
       '/wallet/': { base: '/wallet/', items: sidebarWallet() },
-      '/chain/': { base: '/chain/', items: sidebarChain() }
+      '/chain/': { base: '/chain/', items: sidebarChain() },
+      '/dapps/': { base: '/chain/', items: sidebarDapp() }
     },
 
     editLink: {
@@ -205,6 +206,46 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
             { text: 'RPC', link: 'rpc-url' },
             { text: 'Connect Wallet', link: 'connect-wallet' },
             { text: 'Deploy Project', link: 'deploy-project' }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+function sidebarDapp(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      items: [
+        {
+          text: 'Introduction',
+          base: '/en/dapps/',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: 'overview' },
+            { text: 'Function Module', link: 'core-module' }
+          ]
+        },
+        {
+          text: 'Function Module Detailed',
+          base: '/en/dapps/',
+          collapsed: false,
+          items: [
+            { text: 'Dex', link: 'dex-spot' },
+            { text: 'Dex Derivatives', link: 'dex-derivatives' },
+            { text: 'Staking And Lending', link: 'staking-protocol' },
+            { text: 'LSP And ReStaking', link: 'lsp-restaking' },
+            { text: 'On Chain Insurance', link: 'onchain-insurance' },
+            { text: 'PayFi And RWA', link: 'payfi-rwa' },
+          ]
+        },
+        {
+          text: 'EventFi Case',
+          base: '/en/dapps/case/',
+          collapsed: false,
+          items: [
+            { text: 'Local network', link: 'chain-setup' },
+            { text: 'Start', link: 'start-test' },
           ]
         }
       ]
