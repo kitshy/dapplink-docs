@@ -2,7 +2,7 @@
 
 ## 一.概述
 
-DappLink 一键发钱包分为基础版和企业版本，目前基础版本已经开源，企业版本微开源，基础版本开源地址如下:
+DappLink 一键发钱包分为基础版和企业版本，目前基础版本已经开源，企业版本未开源，基础版本开源地址如下:
 
 - 签名机: https://github.com/dapplink-labs/wallet-sign-go, 签名机代码
 - wallet-chain-account: https://github.com/dapplink-labs/wallet-chain-account, 钱包 account 类型的链 RPC 代码封装
