@@ -136,36 +136,73 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
 function sidebarWallet(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '一键发钱包',
       items: [
-        { text: '系统架构', link: 'overview' },
-        { text: '核心功能模块', link: 'dapplink-wallet' },
         {
-          text: '项目组件',
+          text: '项目介绍',
           base: '/zh/wallet/',
+          collapsed: false,
+          items: [
+            { text: '概述', link: 'overview' },
+            { text: '核心功能', link: 'core-function' }
+          ]
+        },
+        {
+          text: '项目核心功能模块',
+          base: '/zh/wallet/',
+          collapsed: false,
+          items: [
+            { text: '统一签名服务业务流程', link: 'signature' },
+            { text: '中心化钱包业务流程', link: 'centralized-wallet' },
+            { text: '去中心化钱包业务', link: 'decentralized-wallet' },
+            { text: 'MPC 网络', link: 'tss' }
+          ]
+        },
+        {
+          text: '交易所钱包业务流详细介绍',
+          base: '/zh/wallet/centralized/',
+          collapsed: false,
+          items: [
+            { text: '商户信息提交', link: 'business-submit' },
+            { text: '商户 ID 配置', link: 'business-id-config' },
+            { text: '业务方配置 Token', link: 'set-chain-token' },
+            { text: '批量地址生成', link: 'batch-generate-address' },
+            { text: '充值业务', link: 'deposit-flow' },
+            { text: '提现业务', link: 'withdraw-flow' },
+            { text: '归集业务', link: 'collection-flow' },
+            { text: '热转冷', link: 'hot-to-cold' },
+            { text: '冷转热', link: 'cold-to-hot' },
+            { text: '回滚业务', link: 'fallback' },
+            { text: '服务部署方式', link: 'service-deploy' },
+          ]
+        },
+        {
+          text: '去中心化钱包业务流详细介绍',
+          base: '/zh/wallet/setup',
+          collapsed: false,
           items: [
             { text: '统一浏览器代码库', link: 'chain-explorer-api' },
-            { text: '统一 RPC 接口服务', link: 'wallet-chain-node' },
-            { text: '密钥托管工具', link: 'key-locker' },
-            { text: '门限共享秘密算法的底层库', link: 'dapplink-secret' },
-            { text: '行情聚合器物', link: 'skyeye' },
-            { text: '交易系统', link: 'trade' },
-            { text: '离线签名 SDK', link: 'wallet-sdk' },
-            { text: 'MPC 网络', link: 'tss' },
-            { text: '跨链质押项目', link: 'linklayer' },
-            { text: 'HD 钱包后端服务服务', link: 'hailstone' },
-            { text: '统一充值，提现，归集，转冷，风控的钱包服务', link: 'wallet-scanner' },
-            { text: '中心化钱包业务组件', link: 'centralized-wallet-servicer' }
           ]
-        }, {
+        },
+        {
+          text: 'PayFi 技术解决方案',
+          base: '/zh/wallet/setup',
+          collapsed: false,
+          items: [
+            { text: '统一浏览器代码库', link: 'chain-explorer-api' },
+          ]
+        },
+        {
           text: '本地运行测试',
           base: '/zh/wallet/setup',
+          collapsed: false,
           items: [
             { text: '统一浏览器代码库', link: 'chain-explorer-api' },
           ]
-        }, {
+        },
+        {
           text: '使用 DappLink 测试网络测试',
           base: '/zh/wallet/setup',
+          collapsed: false,
           items: [
             { text: '统一浏览器代码库', link: 'chain-explorer-api' },
           ]
@@ -182,6 +219,7 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
         {
           text: '项目介绍',
           base: '/zh/chain/',
+          collapsed: false,
           items: [
             { text: '概述', link: 'overview' },
             { text: '功能模块', link: 'core-module' }
@@ -190,6 +228,7 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
         {
           text: '功能模块详细',
           base: '/zh/chain/',
+          collapsed: false,
           items: [
             { text: 'RollUp 和证明系统抽象', link: 'rollup-and-proof-system-abstraction' },
             { text: '跨链抽象', link: 'cross-chain-abstraction' },
@@ -200,6 +239,7 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
         }, {
           text: '本地运行测试',
           base: '/zh/chain/',
+          collapsed: false,
           items: [
             { text: '本地启动网络', link: 'chain-setup' },
             { text: '开始使用', link: 'start-test' },
@@ -207,6 +247,7 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
         }, {
           text: 'DappLink 测试网络测试',
           base: '/zh/chain/',
+          collapsed: false,
           items: [
             { text: '测试网络介绍', link: 'dapplink-testnet' },
             { text: 'RPC 链接', link: 'rpc-url' },

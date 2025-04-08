@@ -169,16 +169,18 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
     {
       items: [
         {
-          text: 'Project Introduction',
+          text: 'Introduction',
           base: '/en/chain/',
+          collapsed: false,
           items: [
-            { text: 'System Architecture', link: 'overview' },
+            { text: 'Overview', link: 'overview' },
             { text: 'Functional Modules', link: 'core-module' }
           ]
         },
         {
-          text: 'Detailed Description of Functional Modules',
+          text: 'Functional Modules Detail',
           base: '/en/chain/',
+          collapsed: false,
           items: [
             { text: 'RollUp and Proof System Layer', link: 'rollup-and-proof-system-abstraction' },
             { text: 'Cross-Chain', link: 'cross-chain-abstraction' },
@@ -189,6 +191,7 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
         }, {
           text: 'Local Test Run',
           base: '/en/chain/',
+          collapsed: false,
           items: [
             { text: 'Local Startup Network', link: 'chain-setup' },
             { text: 'Quick Start', link: 'start-test' },
@@ -196,6 +199,7 @@ function sidebarChain(): DefaultTheme.SidebarItem[] {
         }, {
           text: 'DappLink TestNet',
           base: '/en/chain/',
+          collapsed: false,
           items: [
             { text: 'Introduction', link: 'dapplink-testnet' },
             { text: 'RPC', link: 'rpc-url' },

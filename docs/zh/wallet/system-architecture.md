@@ -1,2 +1,0 @@
-# System Architecture {#dapplink-wallet}
-
