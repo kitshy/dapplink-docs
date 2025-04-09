@@ -218,10 +218,10 @@ function sidebarWallet(): DefaultTheme.SidebarItem[] {
           items: [{ text: '本地运行 DappLink 一键发钱包项目', link: 'start-local-test' }]
         },
         {
-          text: '使用 DappLink 测试网络测试',
-          base: '/zh/wallet/',
+          text: 'DappLink 测试网络',
+          base: '/zh/wallet/setup/',
           collapsed: false,
-          items: [{ text: '测试网络介绍', link: 'dapplink-testnet' }]
+          items: [{ text: '使用 DappLink 测试网络测试业务流程', link: 'dapplink-wallet-testnet' }]
         }
       ]
     }
