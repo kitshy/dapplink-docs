@@ -75,7 +75,7 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       text: 'Introduction',
       collapsed: false,
       items: [
-        { text: 'What is DappLink ？', link: 'what-is-dapplink' },
+        { text: 'What is DappLink', link: 'what-is-dapplink' },
         { text: 'DappLink Core Business', link: 'core-business' },
         { text: 'Why Choose DappLink', link: 'why-is-dapplink' }
       ]
@@ -85,7 +85,7 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         {
-          text: 'What is One-Click Wallet Deployment ？',
+          text: 'What is One-Click Wallet Deployment',
           link: 'what-is-dapplink-wallet'
         }
       ]
@@ -95,7 +95,7 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         {
-          text: 'What is One-Click L2&L3 Deployment ？',
+          text: 'What is One-Click L2&L3 Deployment',
           link: 'what-is-dapplink-chain'
         }
       ]
@@ -105,7 +105,7 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         {
-          text: 'What are Decentralized Composite Applications ？',
+          text: 'What are Decentralized Composite Applications',
           link: 'what-is-dapplink-dapps'
         }
       ]
@@ -114,7 +114,7 @@ function sidebarDappLink(): DefaultTheme.SidebarItem[] {
       text: 'DappLink Layer3',
       collapsed: false,
       items: [
-        { text: 'What is DappLink Layer3 ？', link: 'what-is-dapplink-layer3' }
+        { text: 'What is DappLink Layer3', link: 'what-is-dapplink-layer3' }
       ]
     }
   ]
